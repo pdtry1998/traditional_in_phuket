@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:traditional_in_phuket/pages/about.dart';
-import 'package:traditional_in_phuket/pages/guide.dart';
+import 'package:traditional_in_phuket/pages/Bar/about.dart';
+import 'package:traditional_in_phuket/pages/Bar/guide.dart';
 import 'package:traditional_in_phuket/pages/menudistrict.dart';
-import 'package:traditional_in_phuket/pages/new.dart';
+import 'package:traditional_in_phuket/pages/Bar/new.dart';
 
 class ThalangPhuket extends StatelessWidget {
   @override
@@ -21,6 +21,19 @@ class ThalangPhuket extends StatelessWidget {
           child: Icon(Icons.home),
         ),
 
+      body: Container(
+        child: GridView.count(crossAxisCount: 2,
+        children: <Widget>[
+          Card(
+            margin: EdgeInsets.fromLTRB(25, 30, 5, 25),
+            child: InkWell(
+              borderRadius: BorderRadius.circular(50),
+               
+            )
+          )
+        ],
+        )
+      ),
 
 
 
