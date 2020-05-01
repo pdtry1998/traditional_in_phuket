@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:traditional_in_phuket/pages/Bar/about.dart';
 import 'package:traditional_in_phuket/pages/Bar/guide.dart';
 import 'package:traditional_in_phuket/pages/Information_Kathu/info_1.dart';
+import 'package:traditional_in_phuket/pages/Information_Kathu/info_2.dart';
+import 'package:traditional_in_phuket/pages/Information_Kathu/info_3.dart';
+import 'package:traditional_in_phuket/pages/Information_Kathu/info_4.dart';
 import 'package:traditional_in_phuket/pages/menudistrict.dart';
 import 'package:traditional_in_phuket/pages/Bar/new.dart';
 
@@ -24,26 +27,46 @@ class MuangPhuket extends StatelessWidget {
         backgroundColor: Colors.black,
       ),
 
+      //ส่วนทำ เหลี่ยมแรก
       body: Container(
-        //padding: EdgeInsets.all(10),
-        child: GridView.count(crossAxisCount: 1,
+        padding: EdgeInsets.all(30), // ตัวขยายให้คอลัมไอค่อนโฮม
+        child: GridView.count(crossAxisCount: 2,
         children: <Widget>[
-          Card(
-            margin: EdgeInsets.all(70),
-            child: InkWell(
-              onTap: (){},
-              splashColor: Colors.black,
+            Card( //ไอค่อนแรก
+            margin: EdgeInsets.all(8),
+        child:InkWell (
+          onTap:(){} ,
+          splashColor: Colors.black38,
+          child: Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min, //ทำให้ไอคอนกับตัวอักษรมาอยู่ตรงกลางในคอลัมที่สร้าง
+
+              children: <Widget>[
+                Icon(Icons.home,size: 70.0,),  // ได้สร้างไว้แล้วจากตัวแปรด้านบน
+                Text("HOME",style: new TextStyle(fontSize: 17.0)), // title ก็ได้สร้างไว่แล้วจากตัวแปรด้านบน
+                ListTile(
+                  onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => Information_One())),
+                )
+              ],
+            ),
+          ),
+        ),
+      ),
+
+          Card(  //ไอค่อน2
+            margin: EdgeInsets.all(8),
+            child:InkWell (
+              onTap:(){} ,
+              splashColor: Colors.black38,
               child: Center(
-                child: ListView(
-                 // mainAxisSize: MainAxisSize.min,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min, //ทำให้ไอคอนกับตัวอักษรมาอยู่ตรงกลางในคอลัมที่สร้าง
 
                   children: <Widget>[
-                    //Icon(Icons.home,size: 80,),
-                    Image.asset("assets/images/1.jpg",
-                    ),
-                    Text("home" ,style: new TextStyle(fontSize: 20)),
+                    Icon(Icons.person,size: 70.0,),  // ได้สร้างไว้แล้วจากตัวแปรด้านบน
+                    Text("HOME",style: new TextStyle(fontSize: 17.0)), // title ก็ได้สร้างไว่แล้วจากตัวแปรด้านบน
                     ListTile(
-                      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => Information_One())),
+                      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => Information_Two())),
                     )
                   ],
                 ),
@@ -51,11 +74,50 @@ class MuangPhuket extends StatelessWidget {
             ),
           ),
 
+          Card(  //ไอค่อน3
+            margin: EdgeInsets.all(8),
+            child:InkWell (
+              onTap:(){} ,
+              splashColor: Colors.black38,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min, //ทำให้ไอคอนกับตัวอักษรมาอยู่ตรงกลางในคอลัมที่สร้าง
 
+                  children: <Widget>[
+                    Icon(Icons.person,size: 70.0,),  // ได้สร้างไว้แล้วจากตัวแปรด้านบน
+                    Text("HOME",style: new TextStyle(fontSize: 17.0)), // title ก็ได้สร้างไว่แล้วจากตัวแปรด้านบน
+                    ListTile(
+                      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => Information_Three())),
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          Card(  //ไอค่อน4
+            margin: EdgeInsets.all(8),
+            child:InkWell (
+              onTap:(){} ,
+              splashColor: Colors.black38,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min, //ทำให้ไอคอนกับตัวอักษรมาอยู่ตรงกลางในคอลัมที่สร้าง
+
+                  children: <Widget>[
+                    Icon(Icons.person,size: 70.0,),  // ได้สร้างไว้แล้วจากตัวแปรด้านบน
+                    Text("HOME",style: new TextStyle(fontSize: 17.0)), // title ก็ได้สร้างไว่แล้วจากตัวแปรด้านบน
+                    ListTile(
+                      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => Information_Four())),
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ),
         ],
         ),
-      ) ,
-
+      ),
 
 
 
@@ -80,14 +142,6 @@ class MuangPhuket extends StatelessWidget {
                 ),
               ),
             ),
-
-//            Row(
-//              children: <Widget>[
-//                Icon(Icons.person),
-//                Text('แนะนำ'),
-//                Icon(Icons.arrow_right),
-//              ],
-//            ),
 
 
             ListTile( //ทำเมนู 1

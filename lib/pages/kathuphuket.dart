@@ -7,6 +7,7 @@ import 'package:traditional_in_phuket/pages/Information_Kathu/info_1.dart';
 import 'package:traditional_in_phuket/pages/Information_Kathu/info_2.dart';
 import 'package:traditional_in_phuket/pages/Information_Kathu/info_3.dart';
 import 'package:traditional_in_phuket/pages/Information_Kathu/info_4.dart';
+import 'package:traditional_in_phuket/pages/menudistrict.dart';
 
 
 class KathuPhuket extends StatelessWidget {
@@ -17,7 +18,16 @@ class KathuPhuket extends StatelessWidget {
         title: Text('อำเภอกะทู้'),
         backgroundColor: Colors.black,
       ),
-      //  backgroundColor: Colors.black12,
+        floatingActionButton: FloatingActionButton(
+          onPressed: (){
+            Navigator.push(context,MaterialPageRoute(builder: (context) => MenuDistrict()));
+          },
+          child: Icon(Icons.home),
+          backgroundColor: Colors.black,
+        ),
+
+
+
 
       //ส่วนทำ เหลี่ยมแรก
       body: Container(
@@ -28,7 +38,7 @@ class KathuPhuket extends StatelessWidget {
             margin: EdgeInsets.all(8),
         child:InkWell (
           onTap:(){} ,
-          splashColor: Colors.deepOrangeAccent,
+          splashColor: Colors.black38,
           child: Center(
             child: Column(
               mainAxisSize: MainAxisSize.min, //ทำให้ไอคอนกับตัวอักษรมาอยู่ตรงกลางในคอลัมที่สร้าง
@@ -49,7 +59,7 @@ class KathuPhuket extends StatelessWidget {
             margin: EdgeInsets.all(8),
             child:InkWell (
               onTap:(){} ,
-              splashColor: Colors.deepOrangeAccent,
+              splashColor: Colors.black38,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min, //ทำให้ไอคอนกับตัวอักษรมาอยู่ตรงกลางในคอลัมที่สร้าง
@@ -70,7 +80,7 @@ class KathuPhuket extends StatelessWidget {
             margin: EdgeInsets.all(8),
             child:InkWell (
               onTap:(){} ,
-              splashColor: Colors.deepOrangeAccent,
+              splashColor: Colors.black38,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min, //ทำให้ไอคอนกับตัวอักษรมาอยู่ตรงกลางในคอลัมที่สร้าง
@@ -91,7 +101,7 @@ class KathuPhuket extends StatelessWidget {
             margin: EdgeInsets.all(8),
             child:InkWell (
               onTap:(){} ,
-              splashColor: Colors.deepOrangeAccent,
+              splashColor: Colors.black38,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min, //ทำให้ไอคอนกับตัวอักษรมาอยู่ตรงกลางในคอลัมที่สร้าง
