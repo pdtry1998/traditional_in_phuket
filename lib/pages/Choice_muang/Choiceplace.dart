@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:traditional_in_phuket/pages/Place_Kathu/info_2.dart';
+import 'package:traditional_in_phuket/pages/Choice_muang/Place/General_place.dart';
+import 'package:traditional_in_phuket/pages/Choice_muang/Place/Original_place.dart';
+
 
 class Choice_Place extends StatelessWidget {
   @override
@@ -25,7 +27,7 @@ class Choice_Place extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Information_Two()));
+                              builder: (context) => Original_place()));
                     })
               ],
             ),
@@ -49,7 +51,7 @@ class Choice_Place extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Information_Two()));
+                              builder: (context) => General_place()));
                     })
               ],
             ),

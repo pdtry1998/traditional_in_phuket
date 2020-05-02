@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:traditional_in_phuket/pages/Place_Kathu/info_2.dart';
+import 'package:traditional_in_phuket/pages/Choice_muang/Food/General_food.dart';
+import 'package:traditional_in_phuket/pages/Choice_muang/Food/Original_food.dart';
+
 
 class Choice_Food extends StatelessWidget {
   @override
@@ -17,7 +19,7 @@ class Choice_Food extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Image.asset(
-                  "assets/images/1.jpg",
+                  "assets/images/6.jpg",
                   fit: BoxFit.cover,
                   height: 150,
                   width: 1500,
@@ -28,7 +30,7 @@ class Choice_Food extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Information_Two()));
+                              builder: (context) => Original_food()));
                     })
               ],
             ),
@@ -41,7 +43,7 @@ class Choice_Food extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Image.asset(
-                  "assets/images/1.jpg",
+                  "assets/images/7.jpg",
                   fit: BoxFit.cover,
                   height: 150,
                   width: 1500,
@@ -52,7 +54,7 @@ class Choice_Food extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Information_Two()));
+                              builder: (context) => General_food()));
                     })
               ],
             ),
