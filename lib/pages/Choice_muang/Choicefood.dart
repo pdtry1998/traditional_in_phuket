@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Information_One extends StatelessWidget {
+class Choice_Food extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        title: Text('อำเภอเมือง'),backgroundColor: Colors.black,
       ),
     );
   }

@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:traditional_in_phuket/pages/Bar/about.dart';
 import 'package:traditional_in_phuket/pages/Bar/guide.dart';
-import 'package:traditional_in_phuket/pages/Information_Kathu/info_1.dart';
-import 'package:traditional_in_phuket/pages/Information_Kathu/info_2.dart';
-import 'package:traditional_in_phuket/pages/Information_Kathu/info_3.dart';
+import 'package:traditional_in_phuket/pages/Place_Kathu/info_1.dart';
+import 'package:traditional_in_phuket/pages/Place_Kathu/info_2.dart';
+import 'package:traditional_in_phuket/pages/Place_Kathu/info_3.dart';
 import 'package:traditional_in_phuket/pages/menudistrict.dart';
 import 'package:traditional_in_phuket/pages/Bar/new.dart';
 

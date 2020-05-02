@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 
-class New extends StatelessWidget {
-
-  final String pageText;
-  New(this.pageText);
+class Choice_Place extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+   return Scaffold(
       appBar: AppBar(title: Text('ข่าวสาร'),backgroundColor: Colors.black,),
     );
   }

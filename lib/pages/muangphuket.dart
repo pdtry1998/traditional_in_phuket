@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:traditional_in_phuket/pages/Bar/about.dart';
 import 'package:traditional_in_phuket/pages/Bar/guide.dart';
-import 'package:traditional_in_phuket/pages/Information_Kathu/info_1.dart';
-import 'package:traditional_in_phuket/pages/Information_Kathu/info_2.dart';
-import 'package:traditional_in_phuket/pages/Information_Kathu/info_3.dart';
-import 'package:traditional_in_phuket/pages/Information_Kathu/info_4.dart';
+import 'package:traditional_in_phuket/pages/Choice_muang/Choiceplace.dart';
+import 'package:traditional_in_phuket/pages/Choice_muang/Choicefood.dart';
+import 'package:traditional_in_phuket/pages/Place_Kathu/info_1.dart';
+import 'package:traditional_in_phuket/pages/Place_Kathu/info_2.dart';
 import 'package:traditional_in_phuket/pages/menudistrict.dart';
 import 'package:traditional_in_phuket/pages/Bar/new.dart';
 
@@ -15,7 +15,7 @@ class MuangPhuket extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('อำเภอเมือง'),backgroundColor: Colors.black,
+        title: Text('อำเภอเมือง'),backgroundColor: Colors.red,
       ),
 
       // ส่วนสร้างปุ่มโฮมย้อนกลับไปหน้าเลือกอำเภอ
@@ -42,10 +42,11 @@ class MuangPhuket extends StatelessWidget {
               mainAxisSize: MainAxisSize.min, //ทำให้ไอคอนกับตัวอักษรมาอยู่ตรงกลางในคอลัมที่สร้าง
 
               children: <Widget>[
-                Icon(Icons.home,size: 70.0,),  // ได้สร้างไว้แล้วจากตัวแปรด้านบน
+                Icon(Icons.beach_access,size: 70.0,
+                color: Colors.pink,),  // ได้สร้างไว้แล้วจากตัวแปรด้านบน
                 Text("HOME",style: new TextStyle(fontSize: 17.0)), // title ก็ได้สร้างไว่แล้วจากตัวแปรด้านบน
                 ListTile(
-                  onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => Information_One())),
+                  onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => Choice_Place())),
                 )
               ],
             ),
@@ -63,10 +64,10 @@ class MuangPhuket extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min, //ทำให้ไอคอนกับตัวอักษรมาอยู่ตรงกลางในคอลัมที่สร้าง
 
                   children: <Widget>[
-                    Icon(Icons.person,size: 70.0,),  // ได้สร้างไว้แล้วจากตัวแปรด้านบน
+                    Icon(Icons.fastfood ,size: 70.0,),  // ได้สร้างไว้แล้วจากตัวแปรด้านบน
                     Text("HOME",style: new TextStyle(fontSize: 17.0)), // title ก็ได้สร้างไว่แล้วจากตัวแปรด้านบน
                     ListTile(
-                      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => Information_Two())),
+                      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => Choice_Food())),
                     )
                   ],
                 ),
@@ -84,10 +85,10 @@ class MuangPhuket extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min, //ทำให้ไอคอนกับตัวอักษรมาอยู่ตรงกลางในคอลัมที่สร้าง
 
                   children: <Widget>[
-                    Icon(Icons.person,size: 70.0,),  // ได้สร้างไว้แล้วจากตัวแปรด้านบน
+                    Icon(Icons.shopping_cart,size: 70.0,),  // ได้สร้างไว้แล้วจากตัวแปรด้านบน
                     Text("HOME",style: new TextStyle(fontSize: 17.0)), // title ก็ได้สร้างไว่แล้วจากตัวแปรด้านบน
                     ListTile(
-                      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => Information_Three())),
+                      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => Information_One())),
                     )
                   ],
                 ),
@@ -105,10 +106,10 @@ class MuangPhuket extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min, //ทำให้ไอคอนกับตัวอักษรมาอยู่ตรงกลางในคอลัมที่สร้าง
 
                   children: <Widget>[
-                    Icon(Icons.person,size: 70.0,),  // ได้สร้างไว้แล้วจากตัวแปรด้านบน
+                    Icon(Icons.local_bar,size: 70.0,),  // ได้สร้างไว้แล้วจากตัวแปรด้านบน
                     Text("HOME",style: new TextStyle(fontSize: 17.0)), // title ก็ได้สร้างไว่แล้วจากตัวแปรด้านบน
                     ListTile(
-                      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => Information_Four())),
+                      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => Information_Two())),
                     )
                   ],
                 ),
