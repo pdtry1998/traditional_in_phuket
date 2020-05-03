@@ -20,9 +20,9 @@ class Original_food extends StatelessWidget {
 
         body: ListView(
         children: <Widget>[
-          Menu('ร้านข้าวต้มดีบุก','ร้านข้าวต้มดีบุก','https://img.wongnai.com/p/800x0/2019/09/04/bf826500647f4dd8b8542320b1e14c9a.jpg'),
-          Menu('dfsgbfg dfg','0000','https://img.wongnai.com/p/1920x0/2018/01/06/aee146f524cc4e04a12a0d374d42d5f6.jpg'),
-          Menu('6666666','666666','https://img.wongnai.com/p/800x0/2019/09/04/bf826500647f4dd8b8542320b1e14c9a.jpg'),
+          Menu('หมี่สะปำคุณยายเจียร ','(ขาออกจากตัวเมือง อยู่ฝั่งเดียวกับ Toyota)  ','https://img.wongnai.com/p/1968x0/2018/01/24/908f866ee83943e88e9183e996adb78d.jpg'),
+          Menu('โกซ้ง ฅนโบราณ',' (หลังตลาดสดเทศบาล)   ','https://img.wongnai.com/p/1920x0/2019/01/31/e9037d32b05a4669996e428aac237f14.jpg'),
+          Menu('หมี่น้ำกุ้งอ่าวเก ','(อยู่ติดถนนพูนผล) ','https://img.wongnai.com/p/1920x0/2017/03/13/627187960b374ba4b4c41c602f289939.jpg'),
           Menu('111111111111','7777777','https://img.wongnai.com/p/800x0/2019/09/04/bf826500647f4dd8b8542320b1e14c9a.jpg'),
         ],
       ),
