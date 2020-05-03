@@ -30,14 +30,14 @@ class General_food extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Image.asset(
-                  "assets/images/1.jpg",
+                  "assets/images/8.jpg",
                   fit: BoxFit.cover,
                   height: 180,
                   width: 2300,
                 ),
-                Text("สถานที่ท่องเที่ยว",style: new TextStyle(fontSize: 20.0)), 
+                Text("หมี่สะปำคุณยายเจียร",style: new TextStyle(fontSize: 20.0)), 
                 ListTile(
-                  onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => First())),
+                  onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext) => FirstPages())),
                 )
               ],
             ),
